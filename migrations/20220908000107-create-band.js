@@ -8,9 +8,6 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      // band_id: {
-      //   type: Sequelize.INTEGER
-      // },
       name: {
         type: Sequelize.STRING,
         allowNull: false,
@@ -27,14 +24,6 @@ module.exports = {
         type: Sequelize.DATE,
         allowNull: false,
       }
-      // createdAt: {
-      //   allowNull: false,
-      //   type: Sequelize.DATE
-      // },
-      // updatedAt: {
-      //   allowNull: false,
-      //   type: Sequelize.DATE
-      // }
     });
   },
   async down(queryInterface, Sequelize) {
