@@ -26,3 +26,9 @@ Listen - Where we tell our app what port to listen for connections on
 npm i
 npm i sequelize
 npm i pg pg-hstore
+npm i -g sequelize-cli
+sequelize init:config
+sequelize init:models
+sequelize init:migrations
+sequelize model:generate --name Band --attributes "band_id:integer, name:string, genre:text, available_start_time:date, end_time:date" --force true
+sequelize db:migrate
